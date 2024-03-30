@@ -153,7 +153,7 @@ def run_colmap(
         f"--image_path {image_dir}",
         f"--output_path {sparse_dir}",
     ]
-    if colmap_version >= 3.7:
+    if colmap_version >= "3.7":
         mapper_cmd.append("--Mapper.ba_global_function_tolerance 1e-6")
 
     mapper_cmd = " ".join(mapper_cmd)
